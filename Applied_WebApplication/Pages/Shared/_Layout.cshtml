@@ -3,9 +3,9 @@
 @using System.Security.Claims
 @using System.Linq;
 @{
-    var MyCompany =    this.User.Identity.Name;
-    if(string.IsNullOrEmpty(MyCompany)) { MyCompany = "Applied"; }
-    }
+    var MyCompany = this.User.Identity.Name;
+    if (string.IsNullOrEmpty(MyCompany)) { MyCompany = "Applied"; }
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,19 +52,17 @@
                         </ul>
 
                         <div class="dropdown">
-                                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                                        @MyCompany
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" asp-page="/Account/Profile">Profile</a></li>
-                                        <li><a class="dropdown-item" asp-page="/Account/Logout">Setting</a></li>
-                                        <li><a class="dropdown-item" asp-area="auth" asp-page="/Account/Logout">Logout</a></li>
-                                    </ul>
-                                </div>
-
-                    </div>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                                @MyCompany
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-page="/Account/Profile">Profile</a></li>
+                                <li><a class="dropdown-item" asp-page="/Account/Logout">Setting</a></li>
+                                <li><a class="dropdown-item" asp-area="auth" asp-page="/Account/Logout">Logout</a></li>
+                            </ul>
+                        </div>
+                   </div>
                 }
-
             </div>
         </nav>
     </header>

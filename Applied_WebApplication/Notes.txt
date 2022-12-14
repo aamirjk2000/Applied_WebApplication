@@ -27,3 +27,16 @@ https://getbootstrap.com/docs/5.0/forms/input-group/			TextBox Buttons Bootstrip
 https://mdbootstrap.com/snippets/standard/mdbootstrap/2923164				Navigation Sample
 
 https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity-configuration?view=aspnetcore-7.0   User Attemps and Lock 
+
+
+CREATE TABLE [Profile](
+  [ID] INTEGER PRIMARY KEY NOT NULL UNIQUE, 
+  [Tag] NVARCHAR(100) NOT NULL UNIQUE, 
+  [Title] NVARCHAR NOT NULL UNIQUE, 
+  [Description] NVARCHAR NOT NULL, 
+  [LastLogin] DATETEXT, 
+  [Session] NVARCHAR, 
+  [CurrencyFormat] VARCHAR(25), 
+  [DateFormat] VARCHAR(25), 
+  [FiscalFrom] DATETIME, 
+  [FiscalTo] DATETIME);
