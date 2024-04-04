@@ -370,3 +370,7 @@ FodyWeavers.xsd
 /Applied_WebApplication/wwwroot/SQLiteDB/CDC.db
 /Applied_WebApplication/wwwroot/SQLiteDB/OCSLub.db
 /Applied_WebApplication/wwwroot/PrintedReports/Ledger.pdf
+/Applied_WebApplication/wwwroot/Reports/HFSSteel.db
+/Applied_WebApplication/wwwroot/SQLiteDB/Alpha.db
+/Applied_WebApplication/wwwroot/SQLiteDB/AppliedUsers.db
+/.gitignore
